@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
+    
+}
+
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *saveImageButton;
+
+- (IBAction)showCameraAction:(id)sender;
+- (IBAction)saveImageAction:(id)sender;
 
 @end
