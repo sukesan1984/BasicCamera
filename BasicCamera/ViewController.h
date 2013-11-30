@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
-    
-}
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *saveImageButton;
